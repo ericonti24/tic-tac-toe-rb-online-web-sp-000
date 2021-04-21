@@ -119,13 +119,14 @@ def winner(board)
   end
 end
 
-def play
-  while !over?
-    turn
-  end
-  if won?
-    puts "congratulations #{winner}!"
-  elsif draw?
-    puts "It's a tie!"
-  end
+def play(board)
+   until over?(board) 
+      turn(board)
+   end 
+   if won?(board)
+      winner(board) == "X" || winner(board) == "O" 
+      puts "Congratulations #{winner(board)}!" 
+   elsif draw?(board)
+      puts "Cats Game!" 
+   end 
 end
