@@ -119,7 +119,7 @@ def winner(board)
   end
 end
 
-def play 
+def play
   while !over?
     turn
   end
@@ -130,4 +130,3 @@ def play
   end
 end
 end
-    
