@@ -99,7 +99,7 @@ def draw?(board)
    if full?(board) && !won?(board)
      return true
    #elsif !full?(board) && !won?(board)
-     r#eturn false
+     #eturn false
    else won?(board)
      return false
    end
